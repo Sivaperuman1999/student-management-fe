@@ -1,27 +1,33 @@
 import { apiClient } from "../lib/apiClient";
 
 export interface Student {
-  id: string;
+  _id: string;
   name: string;
+  rollNo: string;
   email: string;
-  rollNumber?: string;
-  className?: string;
+  phoneNumber: string;
+  department: string;
+  year: number;
   createdAt?: string;
   updatedAt?: string;
 }
 
 export interface CreateStudentPayload {
   name: string;
+  rollNo: string;
   email: string;
-  rollNumber?: string;
-  className?: string;
+  phoneNumber: string;
+  department: string;
+  year: number;
 }
 
 export interface UpdateStudentPayload {
   name?: string;
+  rollNo?: string;
   email?: string;
-  rollNumber?: string;
-  className?: string;
+  phoneNumber?: string;
+  department?: string;
+  year?: number;
 }
 
 export interface StudentListResponse {

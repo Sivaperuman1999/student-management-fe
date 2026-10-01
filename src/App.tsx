@@ -10,8 +10,9 @@ import Dashboard from "./pages/Dashboard/Dashboard";
 import Students from "./pages/Students/Students";
 
 const App = () => {
-  const { authUser, isLoggingIn, initializeAuth } = useAuthStore();
 
+  const { authUser, isLoggingIn, initializeAuth } = useAuthStore();
+  
   useEffect(() => {
     initializeAuth();
   }, [initializeAuth]);
